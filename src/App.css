@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.qq-uploader:before {
+  /*content: attr(qq-drop-area-text) " ";*/
+  font-family: FontAwesome, 'Open Sans', Arial;
+  content: "\f0c5  Drop files here";
+  position: absolute;
+  font-size: 200%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 45%;
+  opacity: 0.25;
+}

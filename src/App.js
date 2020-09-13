@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageDrop from './components/ImageDrop';
+import Navbar from './components/Navbar';
+import AppIconOption from './components/AppIconOption';
+import Grid from './components/Grid';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-auto antialiased">
+      {/* <Navbar />
+      <div className="mx-auto flex justify-center">
+        <ImageDrop />
+        <AppIconOption /> */}
+      <Grid />
+      {/* </div> */}
+
     </div>
   );
 }
