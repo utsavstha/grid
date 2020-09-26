@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+import { data, process } from 'autoprefixer';
 import React from 'react';
 import { randomcolor } from 'randomcolor';
 import { nanoid } from 'nanoid'
@@ -15,12 +15,17 @@ const Grid = () => {
     }
 
     var x = Create2DArray(10)
+    var counter = 1
 
     for (var i = 0; i < 10; i++) {
         for (var j = 0; j < 10; j++) {
-            x[i][j] = "https://picsum.photos/seed/" + nanoid() + "/200/300";
-
+            x[i][j] = "logos/" + (counter) + ".png";
+            counter++;
+            if (counter > 22) {
+                counter = 0;
+            }
         }
+
     }
     console.log(x);
 
@@ -30,6 +35,7 @@ const Grid = () => {
                 return Object.keys(x[keyOuter]).map(keyInner => {
                     return (
                         <img src={x[keyOuter][keyInner]} alt="Girl in a jacket" className="grid-item " key={`${keyInner}-${keyOuter}`} />
+
                     );
                 });
             })}
