@@ -19,7 +19,7 @@ const Grid = () => {
 
     for (var i = 0; i < 10; i++) {
         for (var j = 0; j < 10; j++) {
-            x[i][j] = "logos/" + (counter) + ".png";
+            x[i][j] = "https://raw.githubusercontent.com/utsavstha/grid/master/public/logos/" + (counter) + ".png";
             counter++;
             if (counter > 22) {
                 counter = 0;
