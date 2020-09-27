@@ -14,6 +14,7 @@ function App() {
       <div className="mx-auto flex justify-center">
         <ImageDrop />
         <AppIconOption /> */}
+      <Navbar />
       <Grid />
       {/* </div> */}
 
